@@ -78,6 +78,23 @@ Just so we're able to reset our data when someone figures out our basic auth pas
 _Hint: You do not have a lot of time, so spend it wisely and use a [Memory User Provider](https://symfony.com/doc/current/security/user_providers.html#security-memory-user-provider). Also, make sure that the GET call is still available to the general public._
 
 
+### Commands and packages
+
+```bash
+composer require symfony/validator
+
+composer require symfony/uid
+
+composer require serializer
+
+composer require symfony/http-client
+
+php bin/console make:migration
+
+php bin/console doctrine:migrations:migrate
+
+```
+
 
 
 
