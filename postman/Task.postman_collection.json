@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "0b8b53e2-9be2-4210-bc70-fba92b6d51c7",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9727640"
+	},
+	"item": [
+		{
+			"name": "Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/v1/countries/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"v1",
+						"countries",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/v1/countries/439b8c27-c904-4a15-9ea9-915492fb4d80",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"v1",
+						"countries",
+						"439b8c27-c904-4a15-9ea9-915492fb4d80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Egypt.\",\r\n    \"region\": \"Cairo.\",\r\n    \"subRegion\": \"Naser.\",\r\n    \"demonym\": \"This field is missing.\",\r\n    \"population\": 200,\r\n    \"independent\": true,\r\n    \"flag\": \"This field is missing.\",\r\n    \"currencyName\": \"US\",\r\n    \"currencySymbol\": \"$\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/v1/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"v1",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"name update.\",\r\n    \"region\": \"This field is missing.\",\r\n    \"sub_region\": \"This field is missing.\",\r\n    \"demonym\": \"This field is missing.\",\r\n    \"population\": 200,\r\n    \"independent\": true,\r\n    \"flag\": \"This field is missing.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/v1/countries/439b8c27-c904-4a15-9ea9-915492fb4d80",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"v1",
+						"countries",
+						"439b8c27-c904-4a15-9ea9-915492fb4d80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/v1/countries/439b8c27-c904-4a15-9ea9-915492fb4d80",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"v1",
+						"countries",
+						"439b8c27-c904-4a15-9ea9-915492fb4d80"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
